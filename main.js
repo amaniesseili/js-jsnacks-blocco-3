@@ -2,7 +2,7 @@
 Crea un array vuoto -------> array[]
 e chiedi all’utente un numero da inserire nell’array. --------> prompt
 Continua a chiedere i numeri all’utente e a inserirli nell’array -------> const inputnumber -----> conversione dell input in un numero intero tramite parseInt(input)
-fino a quando la somma degli elementi è minore di 50. --------> while(la somma < 50)... ( + let somma/sum ) + if..*/ 
+fino a quando la somma degli elementi è minore di 50. --------> while(la somma < 50)... ( + let sum ) + if..*/ 
 
 
 const array= [ ];
@@ -27,5 +27,17 @@ while ( sum < 50){
 
 console.log (array)
 console.log (sum)
+
+
+//----------------- esercizio 2 ----------------------------------------
+/*Snack 2
+Crea due tag div con due id diversi.
+Un div avrà il testo colorato di rosso
+mentre l’altro di verde.
+Partendo da un array di numeri,
+stampiamo nell’id rosso i numeri dispari
+e in verde i numeri pari.*/
+
+
 
 
