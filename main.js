@@ -31,12 +31,20 @@ console.log (sum)
 
 //----------------- esercizio 2 ----------------------------------------
 /*Snack 2
-Crea due tag div con due id diversi.
-Un div avrà il testo colorato di rosso
-mentre l’altro di verde.
-Partendo da un array di numeri,
+Crea due tag div con due id diversi. ----> html <div> con id 
+Un div avrà il testo colorato di rosso----> #rosso
+mentre l’altro di verde.   ---------------> #verdde
+Partendo da un array di numeri,----------> array numeri[1,2,3...]
 stampiamo nell’id rosso i numeri dispari
 e in verde i numeri pari.*/
+
+
+const arrayNumeri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  //1-creo un array di numeri 
+const divRosso = document.getElementById ("rosso")   //2- recupero l'elemento div con id rosso 
+const divVerde = document.getElementById ("verde")   //3- recupero l'ele.... 
+
+
+
 
 
 
