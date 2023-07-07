@@ -5,17 +5,18 @@ Continua a chiedere i numeri all’utente e a inserirli nell’array -------> co
 fino a quando la somma degli elementi è minore di 50. --------> while(la somma < 50)... ( + let somma/sum ) + if..*/ 
 
 
-const arrayVuota = [ ];
+const array= [ ];
 // const inputNumber = prompt("Inserici un numero da inserire nell'array : ");
 let sum = 0; 
 
-const num = parseInt(inputNumber);
+
 
 while ( sum < 50){
     const inputNumber = prompt("Inserici un numero da inserire nell'array : ");
+    const num = parseInt(inputNumber);
 
     if (! isNaN(num)){    // 1- verifica se l'input è un numero valido allora 
-        Array.push(num);  // 2- continua a pushare i numeri finchè  
+        array.push(num);  // 2- continua a pushare i numeri finchè  
 
         sum += num;       // 3- la somma dei num>50 
 
@@ -24,4 +25,7 @@ while ( sum < 50){
     }
 }
 
-console.log ("array")
+console.log (array)
+console.log (sum)
+
+
