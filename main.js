@@ -12,7 +12,7 @@ let sum = 0;
 
 
 while ( sum < 50){
-    const inputNumber = prompt("Inserici un numero da inserire nell'array : ");
+    //const inputNumber = prompt("Inserici un numero da inserire nell'array : ");
     const num = parseInt(inputNumber);
 
     if (! isNaN(num)){    // 1- verifica se l'input è un numero valido allora 
@@ -35,7 +35,7 @@ Crea due tag div con due id diversi. ----> html <div> con id
 Un div avrà il testo colorato di rosso----> #rosso
 mentre l’altro di verde.   ---------------> #verdde
 Partendo da un array di numeri,----------> array numeri[1,2,3...]
-stampiamo nell’id rosso i numeri dispari
+stampiamo nell’id rosso i numeri dispari --->( devo creare un variabile che recupera i numeri per poter fare il ciclo)
 e in verde i numeri pari.*/
 
 
@@ -44,7 +44,16 @@ const divRosso = document.getElementById ("rosso")   //2- recupero l'elemento di
 const divVerde = document.getElementById ("verde")   //3- recupero l'ele.... 
 
 
+let i = 0  
+while (i < arrayNumeri.length) {
+    if(arrayNumeri[i] % 2 === 0 )                 // il modulo dei numero pari
+    divVerde.innerHTML += arrayNumeri[i] + " ";   // 1-aggiungo i numeri pari al div verde
 
+    else {
+        divRosso.innerHTML += arrayNumeri[i] + " ";
+    } 
+    i+++;
+}
 
 
 
